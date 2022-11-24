@@ -16,7 +16,7 @@ L: number of elements in BTS
 ## How to run
 
 ```bash
-cd ./bts-profiling/bts-profiling/
+cd ./bts-profiling/balanced-bts-net3/
 
 $ dotnet run -l=12 -n=12
 ```
