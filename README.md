@@ -11,7 +11,7 @@ And printing times of executing of each action:
 
 ![image](https://user-images.githubusercontent.com/112312750/203818016-8201433c-aee4-45a3-94bc-de8ac48c88a1.png)
 
-L: number of a dataset
+L: number of elements in BTS
 
 ## How to run
 
