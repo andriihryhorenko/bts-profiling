@@ -40,11 +40,6 @@ namespace balanced_bts
                 int.TryParse(value, out numberOfDatasets);
             }
 
-            value = Environment.GetEnvironmentVariable("STEP");
-            if (!string.IsNullOrEmpty(value))
-            {
-                int.TryParse(value, out step);
-            }
 
             value = Environment.GetEnvironmentVariable("FIRSTLEN");
             if (!string.IsNullOrEmpty(value))
@@ -57,11 +52,6 @@ namespace balanced_bts
                 if (arguments.ContainsKey("-n"))
                 {
                     int.TryParse(arguments["-n"], out numberOfDatasets);
-                }
-
-                if (arguments.ContainsKey("-s"))
-                {
-                    int.TryParse(arguments["-s"], out step);
                 }
 
                 if (arguments.ContainsKey("-l"))
@@ -99,7 +89,7 @@ namespace balanced_bts
                 btree.TraversePreOrder(btree.Root, ref inOrderTravert);
                 var fullDatasetArray = inOrderTravert.ToArray();
 
-                var random100 = RandomElements(fullDatasetArray, 100);
+                var random100 = RandomElements(fullDatasetArray, datasetL);
 
                 findSw.Start();
                 for (var i = 0; i < random100.Length; i++)
@@ -121,7 +111,7 @@ namespace balanced_bts
                 btree.TraversePreOrder(btree.Root, ref inOrderTravert);
                 var fullDatasetArray = inOrderTravert.ToArray();
 
-                var random100 = RandomElements(fullDatasetArray, 100);
+                var random100 = RandomElements(fullDatasetArray, datasetL);
 
 
 
