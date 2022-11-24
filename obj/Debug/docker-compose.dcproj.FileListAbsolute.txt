@@ -1,1 +1,0 @@
-D:\GITHub\balanced-bts-csharp\balanced-bts\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
